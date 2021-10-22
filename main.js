@@ -1,9 +1,14 @@
-const hamburgerMenu = document.getElementsByClassName("hamburger-menu");
-const hamburgerBars = document.getElementsByClassName("fa-bars");
-const hamburgerClose = document.getElementsByClassName("fa-times");
+const hamburgerMenu = document.querySelector(".hamburger-menu");
+const hamburgerBars = document.querySelector(".header-right a i");
+const hamburgerClose = document.querySelector(".close");
 
-hamburgerBars.addEventListener('click',
-    function showMenu() {
-        hamburgerMenu.style.display = block;
+
+hamburgerBars.addEventListener('click', function() {
+        hamburgerMenu.style.display = 'block';
+    }
+);
+
+hamburgerClose.addEventListener('click', function() {
+        hamburgerMenu.style.display = 'none';
     }
 );
